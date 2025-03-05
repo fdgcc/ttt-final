@@ -9,6 +9,16 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Slider from "./components/slider";
 import Ahalya from "./fullstack/pages/ahalya";
+import Rubypreethi from "./fullstack/pages/rubipreethi";
+import Shekkina from "./fullstack/pages/shekkina";
+import Balaji from "./fullstack/pages/balaji";
+import Harini from "./fullstack/pages/harini";
+import Hebsiba from "./fullstack/pages/hebsiba";
+import Minojini from "./fullstack/pages/minojini";
+import Shapna from "./fullstack/pages/shapna";
+import Varshini from "./fullstack/pages/varshini";
+import Vinothkumar from "./fullstack/pages/vinothkumar";
+import Naveenkumar from "./fullstack/pages/naveenkumaran";
 function App() {
   return (
     <Router>
@@ -25,7 +35,19 @@ function App() {
             </>
           } />
           <Route path="/fullstack" element={<EducationalPlatform />} />
+          <Route path="/rubypreethi" element={<Rubypreethi/>} />
           <Route path="/ahalya" element={<Ahalya />} />
+          <Route path="/shekkina"element={<Shekkina />} />
+          <Route path="/balaji"element={<Balaji/>} />
+          <Route path="/harini"element={<Harini/>} />
+          <Route path="/vinoth"element={<Vinothkumar/>} />
+          <Route path="/naveenkumaran"element={<Naveenkumar/>} />
+          <Route path="/minojini"element={<Minojini/>} />
+          <Route path="/shapna"element={<Shapna/>} />
+          <Route path="/varshini"element={<Varshini/>} />
+          <Route path="/hebsiba"element={<Hebsiba/>} />
+
+
           
         </Routes>
       </main>

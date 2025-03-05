@@ -4,10 +4,10 @@ import "./slider.css"; // Importing styles
 
 const slides = [
   { type: "image", src: "img/first.jpg", description: "Our HOD signed an MoU with Dotcom Company to enhance student learning, industry exposure, and skill development."},
-  { type: "image", src: "img/tarcin1.jpg", description: "Tarcin Robotics, K K Nagar, Madurai, hosted a Technical Discussion on 28.01.2025, covering AI, robotics, and IoT. Experts shared industry trends, career opportunities, with interactive Q&A sessions." },
-  { type: "image", src: "img/haso.jpg", description: "Projects Discussion via Google Meet by Haso Technology, Madurai on 05.02.2025, providing valuable insights and collaborative opportunities for innovation and development." },
   { type: "image", src: "img/chainsys.jpeg", description: "TTT Coordinator, Mr. K.R. Senthil Murugan, AP/CSE, visited Chainsys Software Pvt. Ltd. at ELCOT IT Park, Madurai, on February 19, 2025, for an intern project discussion." },
   { type: "image", src: "img/ms.jpg", description: "Our Coordinator in Beauroi meet" },
+  { type: "image", src: "img/tarcin1.jpg", description: "Tarcin Robotics, K K Nagar, Madurai, hosted a Technical Discussion on 28.01.2025, covering AI, robotics, and IoT. Experts shared industry trends, career opportunities, with interactive Q&A sessions." },
+  { type: "image", src: "img/haso.jpg", description: "Projects Discussion via Google Meet by Haso Technology, Madurai on 05.02.2025, providing valuable insights and collaborative opportunities for innovation and development." },
   { type: "image", src: "img/beauroi.jpg", description: "The BEUROI meeting with trainers focused on discussing the intern project, covering key objectives, progress updates, and future milestones." },
   { type: "image", src: "img/trainer.jpg", description: "Our trainers are working on BEUROI internship projects, providing hands-on support and expertise to help interns develop their skills." },
 

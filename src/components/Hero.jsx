@@ -36,7 +36,7 @@ const Hero = () => {
     setCurrentIndex((prevIndex) => (prevIndex % totalVideos) + 1);
   };
 
-  const getVideoSrc = () => `videos/velvdo.mp4`;
+  const getVideoSrc = () => `videos/vcet.mp4`;
 
   return (
     <div className="relative h-dvh w-screen overflow-x-hidden">
