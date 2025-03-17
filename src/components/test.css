@@ -1,0 +1,99 @@
+.testimonial-slider-container {
+    width: 80%;
+    margin: auto;
+    padding: 100px 0; /* Increased padding-top for space above the cards */
+}
+
+/* Space between cards */
+.slick-slide {
+    margin: 0 10px; /* Reduced margin for less spacing */
+}
+
+/* Testimonial card styling */
+.testimonial-card {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 30px; /* Increased padding */
+    text-align: center;
+    width: 350px; /* Increased width */
+    height: 300px;
+    margin: 20px; /* Added margin for spacing between cards */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.1); /* Slightly larger hover effect for width and height */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Icon position */
+.icon {
+    background: #2b7fc3;
+    color: white;
+    font-size: 32px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 10px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Centered text styles */
+h3 {
+    margin: 12px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h4 {
+    margin: 6px 0;
+    font-size: 17px;
+    color: #444;
+}
+
+p {
+    color: #555;
+    font-size: 15px;
+    font-style: italic;
+    line-height: 1.5;
+}
+.testimonial-slider-container {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  
+  .slick-dots {
+    bottom: 250px !important; /* Adjust or remove bottom spacing */
+  }
+  
+  .slick-slider {
+    margin-bottom: 0 !important;
+  }
+  
+
+/* Dots styling */
+.slick-dots li button:before {
+    width: 12px;
+    height: 12px;
+    content: '◆'; /* Explicitly using a diamond symbol */
+    font-size: 20px; /* Increases the size of the diamond symbol */
+    display: block;
+    text-align: center;
+    line-height: 12px;
+    background: transparent; /* Removes any background color */
+    color: #0c0c0c; /* Sets the color of the diamond */
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/* Active dot styling */
+.slick-dots li.slick-active button:before {
+    color: #081475 !important;
+}
