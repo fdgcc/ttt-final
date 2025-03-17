@@ -5,8 +5,9 @@ import { TiLocationArrow } from "react-icons/ti";
 import { useEffect, useRef, useState } from "react";
 import { FaRobot, FaTimes, FaPaperPlane } from "react-icons/fa"; // Icons
 
-import Button from "./Button";
 import VideoPreview from "./VideoPreview";
+import ChatIcon from "../Chatbot/ChatIcon";
+import Chat from "../Chatbot/Chat";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -15,9 +16,12 @@ const Hero = () => {
   const [hasClicked, setHasClicked] = useState(false);
   const [loading, setLoading] = useState(true);
   const [loadedVideos, setLoadedVideos] = useState(0);
-  const [chatOpen, setChatOpen] = useState(false); // Chatbot toggle state
   const [message, setMessage] = useState(""); // User input state
 
+  const [isChatOpen, setChatOpen] = useState(false);
+  useEffect(()=>{
+    console.log("Chat Open:", isChatOpen);
+  }, [isChatOpen]);
   const totalVideos = 4;
   const nextVdRef = useRef(null);
 
@@ -91,46 +95,17 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Chatbot Button - Floating at Bottom Right */}
-      <div className="fixed bottom-6 right-6 z-50">
-        <button
-          onClick={() => setChatOpen(!chatOpen)}
-          className="bg-gradient-to-r from-purple-500 to-indigo-600 hover:scale-110 transition-transform duration-300 text-white p-4 rounded-full shadow-lg"
-        >
-          {chatOpen ? <FaTimes size={24} /> : <FaRobot size={24} />}
-        </button>
+      {/* Chatbot description */}
+      <div className="App" style={{ position: "fixed", bottom: "20px", right: "20px", zIndex: 100 }}>
+        <ChatIcon
+          onClick={() => {
+            console.log("Chat Icon Clicked");
+            setChatOpen(!isChatOpen);
+          }}
+        />
+        {isChatOpen && <Chat onClose={() => setChatOpen(false)} />}
       </div>
 
-      {/* Chatbox with Stylish UI */}
-      {chatOpen && (
-        <div className="fixed bottom-20 right-6 w-80 h-96 bg-white shadow-xl rounded-lg p-4 transition-all duration-300 transform animate-slide-in z-50">
-          <div className="flex justify-between items-center border-b pb-2">
-            <h2 className="text-lg font-semibold text-gray-800">Chatbot</h2>
-            <button onClick={() => setChatOpen(false)} className="text-gray-600 hover:text-gray-800">
-              <FaTimes size={20} />
-            </button>
-          </div>
-
-          {/* Chat Messages Area */}
-          <div className="h-56 overflow-y-auto p-2 bg-gray-100 rounded-md">
-            <p className="text-gray-500 text-sm">Start chatting with us...</p>
-          </div>
-
-          {/* Input Box */}
-          <div className="mt-2 flex items-center border rounded-lg p-2 bg-white z-[100] relative shadow-md">
-            <input
-              type="text"
-              className="flex-1 outline-none bg-transparent text-gray-700 placeholder-gray-400"
-              placeholder="Type a message..."
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-            />
-            <button className="text-blue-500 hover:text-blue-700 transition duration-300">
-              <FaPaperPlane size={20} />
-            </button>
-          </div>
-        </div>
-      )}
     </div>
   );
 };

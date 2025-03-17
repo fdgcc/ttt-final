@@ -19,7 +19,10 @@ import Shapna from "./fullstack/pages/shapna";
 import Varshini from "./fullstack/pages/varshini";
 import Vinothkumar from "./fullstack/pages/vinothkumar";
 import Naveenkumar from "./fullstack/pages/naveenkumaran";
+import ChatIcon from "./Chatbot/ChatIcon";
+
 function App() {
+
   return (
     <Router>
       <main className="relative min-h-screen w-screen overflow-x-hidden">
@@ -46,12 +49,12 @@ function App() {
           <Route path="/shapna"element={<Shapna/>} />
           <Route path="/varshini"element={<Varshini/>} />
           <Route path="/hebsiba"element={<Hebsiba/>} />
-
-
           
         </Routes>
+
       </main>
     </Router>
+    
   );
 }
 
