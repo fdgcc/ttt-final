@@ -21,7 +21,11 @@ import Varshini from "./fullstack/pages/varshini";
 import Vinothkumar from "./fullstack/pages/vinothkumar";
 import Naveenkumar from "./fullstack/pages/naveenkumaran";
 
+import ChatIcon from "./Chatbot/ChatIcon";
+
+
 function App() {
+
   return (
     <Router>
       <main className="relative min-h-screen w-screen overflow-x-hidden">
@@ -42,18 +46,21 @@ function App() {
           <Route path="/fullstack" element={<EducationalPlatform />} />
           <Route path="/rubypreethi" element={<Rubypreethi />} />
           <Route path="/ahalya" element={<Ahalya />} />
-          <Route path="/shekkina" element={<Shekkina />} />
-          <Route path="/balaji" element={<Balaji />} />
-          <Route path="/harini" element={<Harini />} />
-          <Route path="/vinoth" element={<Vinothkumar />} />
-          <Route path="/naveenkumaran" element={<Naveenkumar />} />
-          <Route path="/minojini" element={<Minojini />} />
-          <Route path="/shapna" element={<Shapna />} />
-          <Route path="/varshini" element={<Varshini />} />
-          <Route path="/hebsiba" element={<Hebsiba />} />
+          <Route path="/shekkina"element={<Shekkina />} />
+          <Route path="/balaji"element={<Balaji/>} />
+          <Route path="/harini"element={<Harini/>} />
+          <Route path="/vinoth"element={<Vinothkumar/>} />
+          <Route path="/naveenkumaran"element={<Naveenkumar/>} />
+          <Route path="/minojini"element={<Minojini/>} />
+          <Route path="/shapna"element={<Shapna/>} />
+          <Route path="/varshini"element={<Varshini/>} />
+          <Route path="/hebsiba"element={<Hebsiba/>} />
+          
         </Routes>
+
       </main>
     </Router>
+    
   );
 }
 
