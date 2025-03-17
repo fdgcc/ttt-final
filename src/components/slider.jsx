@@ -10,8 +10,6 @@ const slides = [
   { type: "image", src: "img/haso.jpg", description: "Projects Discussion via Google Meet by Haso Technology, Madurai on 05.02.2025, providing valuable insights and collaborative opportunities for innovation and development." },
   { type: "image", src: "img/beauroi.jpg", description: "The BEUROI meeting with trainers focused on discussing the intern project, covering key objectives, progress updates, and future milestones." },
   { type: "image", src: "img/trainer.jpg", description: "Our trainers are working on BEUROI internship projects, providing hands-on support and expertise to help interns develop their skills." },
-
-  // ✅ Video Slide (Make sure this file is in the correct folder: `public/videos/arvr.mp4` or `src/assets/videos/arvr.mp4`)
   { 
     type: "video",
     src: "videos/arvr.mp4", 
@@ -49,11 +47,9 @@ export default function Slider() {
         {slides.map((slide, index) => (
           <div key={index} className={index === currentIndex ? "slide active" : "slide hidden"}>
             {slide.type === "image" ? (
-              // ✅ Render Image
-              <img src={slide.src} alt={`Slide ${index + 1}`} className="w-full h-auto" />
+              <img src={slide.src} alt={`Slide ${index + 1}`} className="full-width slide-image" />
             ) : (
-              // ✅ Render Video
-              <video controls autoPlay loop className="w-full h-auto">
+              <video controls autoPlay loop className="full-width slide-video">
                 <source src={slide.src} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
@@ -77,11 +73,6 @@ export default function Slider() {
         ))}
       </div>
 
-      <div className="controls">
-        <button className="play-pause enhanced-play-pause" onClick={() => setIsPlaying(!isPlaying)}>
-          {isPlaying ? <FaPause /> : <FaPlay />}
-        </button>
-      </div>
     </div>
   );
 }
