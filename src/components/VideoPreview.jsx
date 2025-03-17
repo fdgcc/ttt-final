@@ -72,7 +72,7 @@ export const VideoPreview = ({ children }) => {
         ref={contentRef}
         className="origin-center rounded-lg"
         style={{
-          transformStyle: "preserve-3d",
+          transformStyle: "preserve-4d",
         }}
       >
         {children}
