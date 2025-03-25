@@ -35,12 +35,16 @@
   left: 50%;
   transform: translateX(-50%);
   background: rgba(0, 0, 0, 0.6);
-  color: white;
+  color: rgb(251, 249, 249);
   padding: 10px 20px;
   border-radius: 5px;
   text-align: center;
   width: 80%;
+  font-size: 1.5rem; /* Adjust the size as needed */
+  font-family: "Times New Roman", Times, serif;
+
 }
+
 
 .arrow {
   position: absolute;
