@@ -6,34 +6,36 @@ import "./test.css"; // Updated CSS file
 
 const professionals = [
   {
-    icon: "👨‍💼",
-    name: "John Doe",
-    position: "CEO, Tech Innovations",
-    testimonial: "Tech Innovations transformed the industry with cutting-edge AI solutions.",
+    icon: "img/clogo.png", // Path to your local image
+
+      "name": "Chella Software",
+      //"position": "THE FINANCIAL MARKETS SPECIALIST",
+      "testimonial": "THE FINANCIAL MARKETS SPECIALIST."
+   },
+   {
+    "icon": "img/dci.JPG", // Example image
+    "name": "Dotcom Infoway",
+   // "position": "Leading IT & Digital Marketing Company, Madurai",
+    "testimonial": "Dotcom Infoway has been a pioneer in IT solutions and digital marketing, helping businesses thrive with innovative strategies."
+},
+{
+  "icon": "img/chainlogo.JPG", // Example image
+  "name": "ChainSys",
+  //"position": "Enterprise Data Management & Digital Solutions, Madurai",
+  "testimonial": "Discover ChainSys' journey of innovation, delivering excellence in data management and digital transformation."
+},
+
+  {
+    icon: "img/Capture.JPG",
+    name: "Tarcin Robotic",
+    //position: "Finance Head, Money Matters",
+    testimonial: "Empowering Excellence Through Technology, Innovation and Education",
   },
   {
-    icon: "👩‍💻",
-    name: "Jane Smith",
-    position: "Lead Developer, CodeCrafters",
-    testimonial: "CodeCrafters provided me with an excellent opportunity to innovate and grow.",
-  },
-  {
-    icon: "👨‍🔬",
-    name: "Dr. Robert Brown",
-    position: "Senior Scientist, Future Labs",
-    testimonial: "At Future Labs, we are constantly pushing the boundaries of scientific research.",
-  },
-  {
-    icon: "📊",
-    name: "Alice Johnson",
-    position: "Finance Head, Money Matters",
-    testimonial: "Money Matters helped revolutionize the fintech industry with smart solutions.",
-  },
-  {
-    icon: "🚀",
-    name: "Michael Lee",
-    position: "Startup Founder, NextGen AI",
-    testimonial: "NextGen AI is dedicated to bringing artificial intelligence to every business.",
+    icon: "img/bea.JPG",
+    name: "Beau ",
+    //position: "Startup Founder, NextGen AI",
+    testimonial: "Innovate & Conquer",
   },
 ];
 
@@ -66,14 +68,20 @@ const TestimonialSlider = () => {
 
   return (
     <div className="testimonial-slider-container">
-      <div className="slider-wrapper" style={{ paddingBottom: 0, marginBottom: 0 }}>
+      <div className="slider-wrapper">
         <Slider {...settings}>
           {professionals.map((person, index) => (
             <div className="testimonial-card" key={index}>
-              <div className="icon">{person.icon}</div>
-              <h3>{person.name}</h3>
-              <h4>{person.position}</h4>
-              <p>"{person.testimonial}"</p>
+              <div className="testimonial-image-container">
+                <img
+                  src={person.icon}
+                  alt={person.name}
+                  className="icon"
+                />
+              </div>
+              <p className="testimonial-text">"{person.testimonial}"</p>
+              <h3 className="testimonial-name">{person.name}</h3>
+              <h4 className="testimonial-position">{person.position}</h4>
             </div>
           ))}
         </Slider>

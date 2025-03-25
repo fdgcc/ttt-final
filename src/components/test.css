@@ -1,7 +1,10 @@
+/* Testimonial slider container */
 .testimonial-slider-container {
     width: 80%;
     margin: auto;
     padding: 100px 0; /* Increased padding-top for space above the cards */
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
 }
 
 /* Space between cards */
@@ -29,20 +32,24 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-
-/* Icon position */
+/* Icon position and styling */
 .icon {
     background: #2b7fc3;
     color: white;
-    font-size: 32px;
-    width: 50px;
-    height: 50px;
+    font-size: 48px; /* Adjust icon size */
+    width: 100px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     margin: 10px auto;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon inside circle */
+.icon i {
+    font-size: 36px; /* Adjust icon size */
 }
 
 /* Centered text styles */
@@ -64,21 +71,16 @@ p {
     font-style: italic;
     line-height: 1.5;
 }
-.testimonial-slider-container {
-    padding-bottom: 0 !important;
-    margin-bottom: 0 !important;
-  }
-  
-  .slick-dots {
-    bottom: 250px !important; /* Adjust or remove bottom spacing */
-  }
-  
-  .slick-slider {
-    margin-bottom: 0 !important;
-  }
-  
 
 /* Dots styling */
+.slick-dots {
+    bottom: 250px !important; /* Adjust or remove bottom spacing */
+}
+
+.slick-slider {
+    margin-bottom: 0 !important;
+}
+
 .slick-dots li button:before {
     width: 12px;
     height: 12px;
@@ -87,7 +89,7 @@ p {
     display: block;
     text-align: center;
     line-height: 12px;
-    background: transparent; /* Removes any background color */
+    background: transparent;
     color: #0c0c0c; /* Sets the color of the diamond */
     cursor: pointer;
     opacity: 0.8;
