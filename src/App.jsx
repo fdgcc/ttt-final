@@ -22,6 +22,8 @@ import Vinothkumar from "./fullstack/pages/vinothkumar";
 import Naveenkumar from "./fullstack/pages/naveenkumaran";
 
 import ChatIcon from "./Chatbot/ChatIcon";
+import Chat from "./Chatbot/Chat"; // Import the Chat component
+import Chatbot from "./Chatbot/Chatbot";
 
 
 function App() {
@@ -29,7 +31,7 @@ function App() {
   return (
     <Router>
       <main className="relative min-h-screen w-screen overflow-x-hidden">
-        <NavBar />
+      <NavBar />
         <Routes>
           <Route
             path="/"
@@ -56,6 +58,10 @@ function App() {
           <Route path="/varshini"element={<Varshini/>} />
           <Route path="/hebsiba"element={<Hebsiba/>} />
           
+
+          <Route path="/chat" element={<Chat />} />
+          <Route path="/chatbot" element={<Chatbot />} />
+
         </Routes>
 
       </main>
