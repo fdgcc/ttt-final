@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Chatbot from "./Chatbot";
+import FAQ from "./FAQ";
 import "./Chat.css";
 
 const Chat = () => {
@@ -18,7 +19,9 @@ const Chat = () => {
           </button>
         </div>
       ) : (
-        <Chatbot />
+        <>
+          {selectedOption === "faq" ? <FAQ /> : <Chatbot />}
+        </>
       )}
     </div>
   );

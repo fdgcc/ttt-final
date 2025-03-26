@@ -25,6 +25,7 @@ import AnimatedTitle from "./components/AnimatedTitle";
 import ChatIcon from "./Chatbot/ChatIcon";
 import Chat from "./Chatbot/Chat"; // Import the Chat component
 import Chatbot from "./Chatbot/Chatbot";
+import FAQ from "./Chatbot/FAQ";
 
 
 function MainApp() {
@@ -67,6 +68,7 @@ function MainApp() {
 
           <Route path="/chat" element={<Chat />} />
           <Route path="/chatbot" element={<Chatbot />} />
+          <Route path="/faq" element={<FAQ />} />
 
         </Routes>
 
