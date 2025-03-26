@@ -5,7 +5,14 @@ import { motion } from "framer-motion"; // ✅ Added animation support
 import { FaBars, FaTimes } from "react-icons/fa"; // ✅ Icons for mobile menu
 import Button from "./Button";
 
-const navItems = ["Home", "Hierarchy", "Domain", "Slider", "Contact"];
+const navItems = [
+  { name: "Home", path: "/" },
+  { name: "Hierarchy", path: "/hierarchy" },
+  { name: "Domain", path: "/domain" },
+  { name: "Slider", path: "/slider" },
+  { name: "Testimonial Slider", path: "/testimonialslider" },
+  { name: "Contact", path: "/contact" },
+];
 
 const domainCategories = [
   { name: "Fullstack", image: "/img/image.png", path: "/fullstack" },
@@ -36,11 +43,18 @@ const NavBar = () => {
           {navItems.map((item, index) => (
             <motion.button
               key={index}
-              onClick={() => item === "Domain" && setShowDomains(!showDomains)}
+              onClick={() => {
+                if (item.name === "Domain") {
+                  setShowDomains(!showDomains);
+                } else {
+                  navigate(item.path);
+                  setShowDomains(false); // Close domains dropdown if open
+                }
+              }}
               className="relative px-4 py-2 text-white font-semibold uppercase transition-all duration-300 hover:text-blue-400 group"
               whileHover={{ scale: 1.1 }}
             >
-              {item}
+              {item.name}
               {/* 🔥 Underline Effect */}
               <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
             </motion.button>
@@ -64,10 +78,18 @@ const NavBar = () => {
           {navItems.map((item, index) => (
             <button
               key={index}
-              onClick={() => item === "Domain" && setShowDomains(!showDomains)}
+              onClick={() => {
+                if (item.name === "Domain") {
+                  setShowDomains(!showDomains);
+                } else {
+                  navigate(item.path);
+                  setShowDomains(false); // Close dropdown
+                  setIsMobileMenuOpen(false); // Close mobile menu
+                }
+              }}
               className="text-white font-semibold text-lg uppercase hover:text-blue-400 transition-all"
             >
-              {item}
+              {item.name}
             </button>
           ))}
         </motion.div>
