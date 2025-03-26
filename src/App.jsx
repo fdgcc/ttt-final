@@ -20,13 +20,14 @@ import Shapna from "./fullstack/pages/shapna";
 import Varshini from "./fullstack/pages/varshini";
 import Vinothkumar from "./fullstack/pages/vinothkumar";
 import Naveenkumar from "./fullstack/pages/naveenkumaran";
-
+import App from "./components/About"
+import AnimatedTitle from "./components/AnimatedTitle";
 import ChatIcon from "./Chatbot/ChatIcon";
 import Chat from "./Chatbot/Chat"; // Import the Chat component
 import Chatbot from "./Chatbot/Chatbot";
 
 
-function App() {
+function MainApp() {
 
   return (
     <Router>
@@ -45,6 +46,11 @@ function App() {
               </>
             }
           />
+          <Route path="/hierarchy" element={<About/>} />
+          <Route path="/testimonialslider" element={<TestimonialSlider/>} />
+          
+          <Route path="/slider" element={<Slider/>} />
+          <Route path="/slider" element={<Slider/>} />
           <Route path="/fullstack" element={<EducationalPlatform />} />
           <Route path="/rubypreethi" element={<Rubypreethi />} />
           <Route path="/ahalya" element={<Ahalya />} />
@@ -70,4 +76,4 @@ function App() {
   );
 }
 
-export default App;
+export default MainApp;

@@ -61,7 +61,7 @@ const EducationalPlatform = () => {
       img: shekkinapaulinpic,
       name: 'SHEKKINA PAULIN J',
       role: 'Full Stack Develope',
-      expertise: ['Python', 'Java', 'AWS'],
+      expertise: ['JavaScript', 'Epress', 'Node'],
       
     },
     {
@@ -102,6 +102,7 @@ const EducationalPlatform = () => {
         name: 'SHAPNA M S',
         role: 'Full Stack Develope',
         expertise: [' PHP', 'OAuth', 'JWT'],
+        
         
       },
       {
@@ -167,7 +168,7 @@ const EducationalPlatform = () => {
             <p className="text-xl md:text-2xl text-blue-200 mb-12 max-w-2xl">
               Master the complete web development stack with our Trainers
             </p>
-
+ 
             <div className="flex flex-wrap gap-6 justify-center">
               <button className="px-8 py-4 bg-blue-600 rounded-full font-semibold text-white hover:bg-blue-700 transition-all hover:scale-105 active:scale-95" onClick={()=>navigate('/gmeet')}>
              
