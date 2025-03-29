@@ -40,8 +40,9 @@ function MainApp() {
             element={
               <>
                 <Hero />
-                <About />
                 <Slider />
+                <About />
+                
                 <TestimonialSlider /> {/* Added TestimonialSlider here */}
                 <Footer />
               </>
