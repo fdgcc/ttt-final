@@ -1,8 +1,8 @@
 /* Testimonial slider container */
 .testimonial-slider-container {
-    width: 80%;
+    width: 90%;
     margin: auto;
-    padding: 100px 0; /* Increased padding-top for space above the cards */
+    padding: 50px 0; /* Increased padding-top for space above the cards */
     padding-bottom: 0 !important;
     margin-bottom: 0 !important;
 }
@@ -19,7 +19,7 @@
     padding: 30px; /* Increased padding */
     text-align: center;
     width: 350px; /* Increased width */
-    height: 300px;
+    height: 290px;
     margin: 20px; /* Added margin for spacing between cards */
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
     border-radius: 10px;

@@ -16,7 +16,7 @@ const professionals = [
     "icon": "img/dci.JPG", // Example image
     "name": "Dotcom Infoway",
    // "position": "Leading IT & Digital Marketing Company, Madurai",
-    "testimonial": "Dotcom Infoway has been a pioneer in IT solutions and digital marketing, helping businesses thrive with innovative strategies."
+    "testimonial": "Dotcom Infoway pioneers IT solutions and digital marketing, driving business growth with innovation."
 },
 {
   "icon": "img/chainlogo.JPG", // Example image
@@ -33,7 +33,7 @@ const professionals = [
   },
   {
     icon: "img/bea.JPG",
-    name: "Beau ",
+    name: "Beauroi",
     //position: "Startup Founder, NextGen AI",
     testimonial: "Innovate & Conquer",
   },

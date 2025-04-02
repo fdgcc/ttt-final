@@ -23,7 +23,7 @@ const About = () => {
       {/* ✅ Full-width image */}
       <div className="w-screen flex justify-center mt-10 mb-20">
         <img
-          src="img/hier1.jpg"
+          src="img/img.jpg"
           alt="Hierarchy Structure"
           className="w-screen h-auto object-cover"
         />
