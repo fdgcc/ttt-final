@@ -26,6 +26,13 @@ import ChatIcon from "./Chatbot/ChatIcon";
 import Chat from "./Chatbot/Chat"; // Import the Chat component
 import Chatbot from "./Chatbot/Chatbot";
 import FAQ from "./Chatbot/FAQ";
+import Aad from './android-app/pages/appmain';
+import ArVr from './ar-vr/pages/armain';
+import Dataanalyst from './data-analyst/pages/damain';
+import Karmugilan from './data-analyst/pages/karmugilan';
+import Nivetha from './data-analyst/pages/nivetha';
+import Mohamedshihab from './ar-vr/pages/mohamedshihab';
+import Santhoshmrs  from './ar-vr/pages/santhosh';
 
 
 function MainApp() {
@@ -65,7 +72,17 @@ function MainApp() {
           <Route path="/shapna"element={<Shapna/>} />
           <Route path="/varshini"element={<Varshini/>} />
           <Route path="/hebsiba"element={<Hebsiba/>} />
-          
+          <Route path="/karmugilan" element={<Karmugilan/>}/>
+          <Route path="/nivetha" element={<Nivetha/>}/>
+          <Route path="/mohamedshihab" element={<Mohamedshihab/>}/>
+          <Route path="/santhosh" element={<Santhoshmrs/>}/>
+          <Route path="/akilarani" element={<Akilarani/>}/>
+          <Route path="/dineshkumar" element={<Dineshaad/>}/>
+          <Route path="/karthiga" element={<Karthiga/>}/>
+          <Route path="/naganimesh" element={<Naganimesh/>}/>
+          <Route path="/meerashafrin" element={<Meerashafrin/>}/>
+          <Route path="/nitheeshlingam" element={<Nitheeshlingam/>}/>
+          <Route path="/swethanp" element={<Swethanp/>}/>
 
           <Route path="/chat" element={<Chat />} />
           <Route path="/chatbot" element={<Chatbot />} />

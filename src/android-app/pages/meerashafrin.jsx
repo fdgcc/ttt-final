@@ -3,7 +3,7 @@ import { Mail, Phone, Linkedin, FileText, Building, Code, Calendar } from 'lucid
 
 import { useEffect } from 'react';
 
-import meerapic from '../images/meera.JPEG';
+import meerapic from '../images/meera.jpg';
 const Meerashafrin = () => {
 
     useEffect(() => {

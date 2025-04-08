@@ -3,39 +3,39 @@ import { Mail, Phone, Linkedin, FileText, Building, Code, Calendar } from 'lucid
 
 import { useEffect } from 'react';
 
-import swethanppic from '../images/Swetha.JPEG';
+import nivipic from '../images/nivetha.jpg';
 
-const Swethanp = () => {
+const Nivetha = () => {
 
     useEffect(() => {
-      window.scrollTo(0, 0); 
+      window.scrollTo(0, 0); // Scroll to the top when the component mounts
     }, [])
     
   const experiences = [
     {
-        company: "NSIC - Technical Services Center",
-        role: "App Developer",
-        duration: "DEC 2023 - JAN 2024",
-        responsibilities: [
-          "Contributed to the design, development,",
-          "Gained hands-on experience with Android Studio and Android SDK",
-          "testing of Android applications."
-        ]
-      },
-    {
-      company: "BLACKBEN TECHNOLOGY,MADURAI",
-      role: "Full-stack developer",
-      duration: "18.06.2024 to 17.07.2024.",
+      company: "NSIC - Technical Services Center",
+      role: "App Developer",
+      duration: "DEC 2023 - JAN 2024",
       responsibilities: [
-       'Gained exposure to practical knowledge and hands on experience in Envanto and Wordpress',
+        "Contributed to the design, development,",
+        "Gained hands-on experience with Android Studio and Android SDK",
+        "testing of Android applications."
+      ]
+    },
+    {
+      company: "Internship at Marlion Tech Madurai",
+      role: "Data analyst Intern",
+      duration: "june 2024 - july 2024",
+      responsibilities: [
+
       ]
         
     }
   ];
 
   const skills = [
-    "React", "Node.js", "DSA", "MongoDB", 
-    "UI/UX", "NETWORKING", "SQL"
+    "python", "Node.js", "Power-Bi", 
+    "Postman API", "NETWORKING", "SQL"
   ];
 
   return (
@@ -46,18 +46,18 @@ const Swethanp = () => {
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="w-64 h-64 rounded-full overflow-hidden shadow-lg border-4 border-white">
               <img 
-                src = {swethanppic}
+                src = {nivipic}
                 className="w-full h-full object-cover"
-                alt="Swetha N P"
+                alt="Nivetha"
               />
             </div>
             <div className="text-center md:text-left">
               <h1 className="text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-700">
-              SWETHA N P
+              Niveatha
               </h1>
-              <h2 className="text-2xl text-blue-600 mb-4">  AAD TRAINER</h2>
+              <h2 className="text-2xl text-blue-600 mb-4"> DATA-ANALYST TRAINER</h2>
               <p className="text-xl text-gray-700 max-w-2xl">
-              Ambitious Computer Science and Engineering student with expertise in full-stack development and a keen enthusiasm for Android app development. Aiming to utilize strong technical skills and creative problem-solving to drive impactful software solutions in a collaborative environment.
+              As a Computer Science and Engineering student specializing in data analytics, I combine strong technical programming skills with statistical knowledge to extract meaningful insights from complex datasets. I've developed expertise in Python, SQL, and visualization tools like Power BI, applying these skills in academic projects and internships to solve real-world problems.  
               </p>
             </div>
           </div>
@@ -125,15 +125,15 @@ const Swethanp = () => {
             </span>
           </h2>
           <div className="flex flex-wrap justify-center gap-8">
-            <a href="mailto:22csec29@gmail.com" className="flex items-center gap-3 text-gray-700 hover:text-blue-600 transition-colors">
+            <a href="mailto:22csec17@gmail.com" className="flex items-center gap-3 text-gray-700 hover:text-blue-600 transition-colors">
               <Mail className="w-6 h-6" />
-              <span>22csec29@gmail.com</span>
+              <span>22csec17@gmail.com</span>
             </a>
-            <a href="tel:9344662993" className="flex items-center gap-3 text-gray-700 hover:text-blue-600 transition-colors">
+            <a href="tel:984212669017" className="flex items-center gap-3 text-gray-700 hover:text-blue-600 transition-colors">
               <Phone className="w-6 h-6" />
-              <span>9344662993</span>
+              <span>984212669017</span>
             </a>
-            <a href='https://www.linkedin.com/in/swetha-n-p-811a36290/' target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-gray-700 hover:text-blue-600 transition-colors">
+            <a href='https://www.linkedin.com/in/nivetha-m-093744264/' target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-gray-700 hover:text-blue-600 transition-colors">
               <Linkedin className="w-6 h-6" />
               <span>LinkedIn Profile</span>
             </a>
@@ -142,7 +142,7 @@ const Swethanp = () => {
           {/* Resume Button */}
           <div className="mt-12">
             <button 
-              onClick={() => window.open('https://drive.google.com/file/d/161MNVnmmCzWfiAq6HL7UnPX23fEOEsoP/view?usp=sharing', '_blank')}
+              onClick={() => window.open('https://drive.google.com/file/d/161W7HD4IYj8QE5luJEICwzmROMTTZWIE/view?usp=sharing', '_blank')}
               className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-700 rounded-full text-white font-semibold hover:from-blue-600 hover:to-blue-800 transition-all shadow-lg hover:shadow-blue-300/40 hover:scale-105 active:scale-95"
             >
               <FileText className="w-5 h-5" />
@@ -155,4 +155,4 @@ const Swethanp = () => {
   );
 };
 
-export default Swethanp;
+export default Nivetha;
