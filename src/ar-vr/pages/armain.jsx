@@ -9,7 +9,7 @@ import {
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 
-import shihabpic from '../images/shihab.JPG';
+import shihabpic from '../images/shihab.jpg';
 import santhoshmrspic from '../images/santhoshmrs.jpg';
 // Importing images
 
