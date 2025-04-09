@@ -1,6 +1,6 @@
 import React from 'react';
 import { Mail, Phone, Linkedin, FileText, Building, Code, Calendar } from 'lucide-react';
-import lerishapic from '../images/ERNESTINE LERISHA J.JPG';
+import lerishapic from '../images/ERNESTINE LERISHA J.jpg';
 import { useEffect } from 'react';
 
 const Lerisha = () => {

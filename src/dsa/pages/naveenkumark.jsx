@@ -3,7 +3,7 @@ import { Mail, Phone, Linkedin, FileText, Building, Code, Calendar } from 'lucid
 
 import { useEffect } from 'react';
 
-import naveenkpic from '../images/naveenk.jpg';
+import naveenkpic from '../images/naveenk.JPG';
 
 const Naveenkumark = () => {
 

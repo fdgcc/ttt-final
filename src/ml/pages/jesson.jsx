@@ -1,6 +1,6 @@
 import React from 'react';
 import { Mail, Phone, Linkedin, FileText, Building, Code, Calendar } from 'lucide-react';
-import jessonpic from '../images/Jesson Daniel.jpeg';
+import jessonpic from '../images/Jesson Daniel.jpg';
 import { useEffect } from 'react';
 
 const Jesson= () => {

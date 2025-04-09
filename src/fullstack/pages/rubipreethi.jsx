@@ -1,6 +1,6 @@
 import React from 'react';
 import { Mail, Phone, Linkedin, FileText, Building, Code, Calendar } from 'lucide-react';
-import Rubyimage from '../images/rubipreethi.JPG';
+import Rubyimage from '../images/rubipreethi.jpg';
 import { useEffect } from 'react'; // Only import useEffect if React is already imported
 
 const Rubypreethi = () => {

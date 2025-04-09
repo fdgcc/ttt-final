@@ -1,6 +1,6 @@
 import React from 'react';
 import { Mail, Phone, Linkedin, FileText, Building, Code, Calendar } from 'lucide-react';
-import ahalyaRpic from '../images/Ahalya R.JPEG';
+import ahalyaRpic from '../images/Ahalya R.jpg';
 import { useEffect } from 'react';
 
 const Ahalya = () => {

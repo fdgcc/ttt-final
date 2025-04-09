@@ -16,12 +16,12 @@ const navItems = [
 
 const domainCategories = [
   { name: "Fullstack", image: "/img/image.png", path: "/fullstack" },
-  { name: "AR/VR", image: "/img/image.png" },
-  { name: "AI/ML", image: "/img/image.png" },
-  { name: "Cloud Computing", image: "/img/image.png" },
-  { name: "Mobile App Development", image: "/img/image.png" },
-  { name: "Gen AI", image: "/img/image.png" },
-  { name: "Data Analytics", image: "/img/image.png" },
+  { name: "AR/VR", image: "/img/image.png",path:"/arvr" },
+  { name: "AI/ML", image: "/img/image.png",path:"/machine-learning"},
+  { name: "Cloud Computing", image: "/img/image.png",path:"/cloud-computing" },
+  { name: "Mobile App Development", image: "/img/image.png" ,path:"/aad"},
+  { name: "Gen AI", image: "/img/image.png",path:"/dsa" },
+  { name: "Data Analytics", image: "/img/image.png",path:"/data-analyst" },
 ];
 
 const NavBar = () => {

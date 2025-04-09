@@ -10,17 +10,17 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import { useNavigate } from 'react-router-dom';
 
 // Importing images
-import rubiImage from '../images/rubipreethi.JPG';
+import rubiImage from '../images/rubipreethi.jpg';
 import balajiImage from '../images/Balaji.jpg';
 import Vinothkumarpic from'../images/vinoth.jpg';
-import ahalyaRpic from '../images/Ahalya R.JPEG';
+import ahalyaRpic from '../images/Ahalya R.jpg';
 import shekkinapaulinpic from '../images/shekkina.jpg';
 import navinkumarpic from '../images/Navin kumaran OH.png';
 import varshinipic from '../images/varshini.jpg';
 import shapnapic from '../images/Shapna.jpg';
 import minojinipic from '../images/Minojini.jpg';
 import hebsibapic from '../images/hebsiba.jpg';
-import harinipic from '../images/harini.JPEG';
+import harinipic from '../images/harini.jpg';
 
 const EducationalPlatform = () => {
   const [isVisible, setIsVisible] = useState(false);

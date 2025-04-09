@@ -12,8 +12,8 @@ import { useNavigate } from 'react-router-dom';
 import steve from '../images/paulsteve.JPG';
 import surya from '../images/SURYA B S.JPG';
 import vignesh from '../images/Vignesh Babu.jpg';
-import jesson from '../images/Jesson Daniel.jpeg';
-import lerisha from '../images/ERNESTINE LERISHA J.JPG';
+import jesson from '../images/Jesson Daniel.jpg';
+import lerisha from '../images/ERNESTINE LERISHA J.jpg';
 // Importing images
 const Ml= () => {
   const [isVisible, setIsVisible] = useState(false);

@@ -14,7 +14,7 @@ import { useNavigate } from 'react-router-dom';
 // Importing images
 import Muthispic from '../images/muthiswari.jpg';
 import shuruthikapic from '../images/shurutika.JPEG';
-import naveenkpic from '../images/naveenk.jpg';
+import naveenkpic from '../images/naveenk.JPG';
 import roshinipic from '../images/roshini.JPG';
 import sabreenpic from '../images/sabreen.JPEG';
 import roobapic from '../images/ROOBALAKSHMI N B.JPG';

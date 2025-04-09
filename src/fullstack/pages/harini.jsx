@@ -1,6 +1,6 @@
 import React from 'react';
 import { Mail, Phone, Linkedin, FileText, Building, Code, Calendar } from 'lucide-react';
-import harinipic from '../images/harini.JPEG';
+import harinipic from '../images/harini.jpg';
 import { useEffect } from 'react';
 
 const Harini  = () => {
