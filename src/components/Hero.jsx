@@ -1,9 +1,6 @@
 import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/all";
-import { TiLocationArrow } from "react-icons/ti";
 import { useEffect, useRef, useState } from "react";
-import { FaRobot, FaTimes, FaPaperPlane } from "react-icons/fa"; // Icons
+import { ScrollTrigger } from "gsap/all";
 
 import VideoPreview from "./VideoPreview";
 import ChatIcon from "../Chatbot/ChatIcon";
@@ -13,15 +10,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(1);
-  const [hasClicked, setHasClicked] = useState(false);
   const [loading, setLoading] = useState(true);
   const [loadedVideos, setLoadedVideos] = useState(0);
-  const [message, setMessage] = useState(""); // User input state
-
   const [isChatOpen, setChatOpen] = useState(false);
-  useEffect(()=>{
-    console.log("Chat Open:", isChatOpen);
-  }, [isChatOpen]);
+
   const totalVideos = 4;
   const nextVdRef = useRef(null);
 
@@ -36,16 +28,16 @@ const Hero = () => {
   }, [loadedVideos]);
 
   const handleMiniVdClick = () => {
-    setHasClicked(true);
     setCurrentIndex((prevIndex) => (prevIndex % totalVideos) + 1);
   };
 
   const getVideoSrc = () => `videos/vcet.mp4`;
 
   return (
-    <div className="relative h-dvh w-screen overflow-x-hidden">
+    <div className="relative h-screen w-screen overflow-x-hidden bg-black">
+      {/* Loader */}
       {loading && (
-        <div className="flex-center absolute z-[100] h-dvh w-screen overflow-hidden bg-violet-50">
+        <div className="flex-center absolute z-[100] h-screen w-screen bg-violet-50">
           <div className="three-body">
             <div className="three-body__dot"></div>
             <div className="three-body__dot"></div>
@@ -54,58 +46,60 @@ const Hero = () => {
         </div>
       )}
 
-      <div id="video-frame" className="relative z-10 h-dvh w-screen overflow-hidden rounded-lg bg-blue-75">
-        <div>
-          <div className="mask-clip-path absolute-center absolute z-50 size-64 cursor-pointer overflow-hidden rounded-lg">
-            <VideoPreview>
-              <div
-                onClick={handleMiniVdClick}
-                className="origin-center scale-50 opacity-0 transition-all duration-500 ease-in hover:scale-100 hover:opacity-100"
-              >
-                <video
-                  ref={nextVdRef}
-                  src={getVideoSrc()}
-                  loop
-                  muted
-                  id="current-video"
-                  className="size-64 origin-center scale-150 object-cover object-center"
-                  onLoadedData={handleVideoLoad}
-                />
-              </div>
-            </VideoPreview>
-          </div>
+      {/* Video Section */}
+      <div id="video-frame" className="relative z-10 h-screen w-screen overflow-hidden">
+        {/* Desktop/Tablet: Fullscreen */}
+        <video
+          src={getVideoSrc(currentIndex === totalVideos - 1 ? 1 : currentIndex)}
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="hidden md:block absolute top-0 left-0 w-full h-full object-cover"
+          onLoadedData={handleVideoLoad}
+        />
 
+        {/* Mobile: Minimized */}
+        <div className="flex md:hidden h-full w-full justify-center items-center">
           <video
             src={getVideoSrc()}
-            loop
-            muted
-            id="next-video"
-            className="absolute-center invisible absolute z-20 size-64 object-cover object-center"
-            onLoadedData={handleVideoLoad}
-          />
-
-          <video
-            src={getVideoSrc(currentIndex === totalVideos - 1 ? 1 : currentIndex)}
             autoPlay
             loop
             muted
-            className="absolute left-0 top-0 size-full object-cover object-center"
+            playsInline
+            className="w-[300px] h-[200px] rounded-lg shadow-lg object-cover"
             onLoadedData={handleVideoLoad}
           />
         </div>
       </div>
 
-      {/* Chatbot description */}
-      <div className="App" style={{ position: "fixed", bottom: "20px", right: "20px", zIndex: 100 }}>
+      {/* Mini video preview click area (optional) */}
+      <div className="absolute top-5 left-5 z-50 hidden md:block">
+        <VideoPreview>
+          <div
+            onClick={handleMiniVdClick}
+            className="cursor-pointer transition-all hover:scale-105"
+          >
+            <video
+              ref={nextVdRef}
+              src={getVideoSrc()}
+              loop
+              muted
+              playsInline
+              className="w-32 h-20 object-cover rounded-md"
+              onLoadedData={handleVideoLoad}
+            />
+          </div>
+        </VideoPreview>
+      </div>
+
+      {/* Chatbot */}
+      <div className="App fixed bottom-5 right-5 z-50">
         <ChatIcon
-          onClick={() => {
-            console.log("Chat Icon Clicked");
-            setChatOpen(!isChatOpen);
-          }}
+          onClick={() => setChatOpen(!isChatOpen)}
         />
         {isChatOpen && <Chat onClose={() => setChatOpen(false)} />}
       </div>
-
     </div>
   );
 };

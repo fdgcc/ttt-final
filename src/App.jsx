@@ -98,7 +98,7 @@ function MainApp() {
           />
           <Route path="/hierarchy" element={<About/>} />
           <Route path="/testimonialslider" element={<TestimonialSlider/>} />
-          
+          <Route path='/contact' element={<Contact/>}/>
           <Route path="/slider" element={<Slider/>} />
           <Route path="/slider" element={<Slider/>} />
           <Route path="/fullstack" element={<EducationalPlatform />} />
