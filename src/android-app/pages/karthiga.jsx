@@ -123,9 +123,9 @@ const Karthiga = () => {
             </span>
           </h2>
           <div className="flex flex-wrap justify-center gap-8">
-            <a href="mailto:22csec22@gmail.com" className="flex items-center gap-3 text-gray-700 hover:text-blue-600 transition-colors">
+            <a href="mailto:22csec13@gmail.com" className="flex items-center gap-3 text-gray-700 hover:text-blue-600 transition-colors">
               <Mail className="w-6 h-6" />
-              <span>22csec22@gmail.com</span>
+              <span>22csec13@gmail.com</span>
             </a>
             <a href="tel:7010509807" className="flex items-center gap-3 text-gray-700 hover:text-blue-600 transition-colors">
               <Phone className="w-6 h-6" />

@@ -23,9 +23,9 @@ const Karmugilan = () => {
       ]
     },
     {
-      company: "Clarisco Solutions, Madurai",
+      company: "NEARLE TECHNOLOGY, COIMBATORE",
       role: "Cloud Computing (AWS):",
-      duration: "sept 2024 - oct 2024",
+      duration: "June 2024 - July 2024",
       responsibilities: [
        'Assist in deploying, monitoring, and optimizing cloud resources (AWS, Azure, GCP).',
 
@@ -129,13 +129,13 @@ const Karmugilan = () => {
             </span>
           </h2>
           <div className="flex flex-wrap justify-center gap-8">
-            <a href="mailto:22csec28@gmail.com" className="flex items-center gap-3 text-gray-700 hover:text-blue-600 transition-colors">
+            <a href="mailto:karmugilan.nagarajan@gmail.com" className="flex items-center gap-3 text-gray-700 hover:text-blue-600 transition-colors">
               <Mail className="w-6 h-6" />
-              <span>22csec28@gmail.com</span>
+              <span>karmugilan.nagarajan@gmail.com</span>
             </a>
-            <a href="tel:8248907690" className="flex items-center gap-3 text-gray-700 hover:text-blue-600 transition-colors">
+            <a href="tel:9342011500" className="flex items-center gap-3 text-gray-700 hover:text-blue-600 transition-colors">
               <Phone className="w-6 h-6" />
-              <span>8248907690</span>
+              <span>9342011500</span>
             </a>
             <a href='https://www.linkedin.com/in/swathi-nd-3a6a8a290/' target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-gray-700 hover:text-blue-600 transition-colors">
               <Linkedin className="w-6 h-6" />
